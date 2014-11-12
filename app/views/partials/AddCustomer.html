@@ -1,0 +1,30 @@
+<div data-ng-controller="AddCustomerController">
+<form novalidate name="customerForm">
+<div class="form-group">
+    <span class="col-sm-3 control-label">Name:</span>
+    <input type="text" class="form-control" data-ng-model="customer.name" name="name" required placeholder="name">
+	</input>
+	<p ng-show="customerForm.name.$invalid" class="error-mesg">Name is required.</p>
+</div>
+<div class="form-group">
+    <span class="col-sm-3 control-label">Id:</span><input type="number" name="id" class="form-control" data-ng-model="customer.id" ng-required="true" placeholder="id"></input>
+    <p ng-show="customerForm.id.$invalid " class="error-mesg">Id should be a number.</p>
+</div>
+<div class="form-group">
+    <span class="col-sm-3 control-label">City:</span><input type="text" name="city" class="form-control" data-ng-model="customer.city" ng-required="true" placeholder="city"></input>
+</div>
+<div class="form-group">
+    <span class="col-sm-3 control-label">State:</span><input type="text" name="state" class="form-control" data-ng-model="customer.state" ng-required="true" placeholder="state"></input>
+</div>
+<div class="form-group">
+    <span class="col-sm-3 control-label">Zip:</span><input type="number" name="zip" class="form-control" data-ng-model="customer.zip" ng-reuired="true" placeholder="pincode"></input>
+    <p ng-show="customerForm.zip.$invalid " class="error-mesg">Zip code should be a number.</p>
+</div>
+<div class="form-group">
+    <span class="col-sm-3 control-label">Number:</span><input type="number" name="number" class="form-control" data-ng-model="customer.number" ng-reuired="true" placeholder="Contact Number"></input>
+    <p ng-show="customerForm.number.$invalid " class="error-mesg">Phone number should be a number.</p>
+</div>
+    <button type="submit" class="btn btn-primary" data-ng-click="insertCustomer(customer)">Add Customer</button>
+</form>
+</div>
+

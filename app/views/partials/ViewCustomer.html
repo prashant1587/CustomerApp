@@ -1,0 +1,41 @@
+<div data-ng-controller="CustomerController">
+    
+    <div data-ng-repeat="customer  in customers | orderBy:'id'">
+        <div class="view-temp">
+                <div >
+                Name: 
+                    
+                    <label >{{customer.name}}</label>
+                    
+                </div>
+                <div >
+                Emp id:
+                    <label>{{customer.id}}</label>
+                    
+                </div>
+                 <div >
+                City: 
+                    
+                    <label >{{customer.city}}</label>
+                    
+                </div>
+                <div >
+                State:
+                    <label>{{customer.state}}</label>
+                    
+                </div>
+                 <div >
+                Zip: 
+                    
+                    <label >{{customer.zip}}</label>
+                    
+                </div>
+                <div >
+                Contact:
+                    <label>{{customer.number}}</label>
+                    
+                </div>
+    </div>
+    
+</div>
+ <div class="clear"></div>

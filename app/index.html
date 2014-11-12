@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+      </head>
+  <body ng-app="customerApp">
+        <div class="container">
+            <div class="header">
+              
+              <h1 class="text-muted">Customer Application</h1>
+              <a href="#/viewcustomer">View Customer</a>
+              <a href="#/addcustomer">Add Customer</a>
+              <a href="#/delcustomer">Delete Customer</a>
+              <a href="#/updatecustomer">Update Customer</a>
+            </div>
+
+            <div ng-view=""></div>
+
+            <div class="footer">
+              <p><span class="glyphicon glyphicon-heart"></span> Copy right 2014</p>
+            </div>
+    </div>
+
+
+        
+        <script src="scripts/common/angular.js"></script>
+        <script src="scripts/common/angular-route.js"></script>
+        <script src="scripts/common/jquery-2.1.1.min.js"></script>
+        <script src="scripts/common/mainFile.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/factory/customerFactory.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

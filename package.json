@@ -1,0 +1,12 @@
+{
+  "name": "Customer-Application",
+  "version": "0.0.1",
+  "author": "Prashant",
+  "scripts": {
+    "start": "node server.js"
+   },
+   "dependencies": {
+   "restify": "2.8.2",
+   "mongojs": "0.15.1"
+  }
+}

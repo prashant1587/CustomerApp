@@ -1,0 +1,45 @@
+<div data-ng-controller="DeleteCustomerController">
+<form novalidate name="customerSearchForm">
+   <div class="form-group">
+    <span class="col-sm-3 control-label">Search By Id:</span><input type="number" name="searchid" class="form-control" data-ng-model="customer.id" ng-required="true" placeholder="id"></input>
+    <p ng-show="(customerSearchForm.searchid.$dirty || submitted) && customerSearchForm.searchid.$invalid " class="error-mesg">Id should be a number.</p>
+    </div>
+    <button class="btn btn-primary" data-ng-click="searchCustomer(customer.id)">Search</button>
+</form>
+    
+                <div >
+                Name: 
+                    
+                    <label >{{customer.name}}</label>
+                    
+                </div>
+                <div >
+                Emp id:
+                    <label>{{customer.id}}</label>
+                    
+                </div>
+                 <div >
+                City: 
+                    
+                    <label >{{customer.city}}</label>
+                    
+                </div>
+                <div >
+                State:
+                    <label>{{customer.state}}</label>
+                    
+                </div>
+                 <div >
+                Zip: 
+                    
+                    <label >{{customer.zip}}</label>
+                    
+                </div>
+                <div >
+                Contact:
+                    <label>{{customer.number}}</label>
+                    
+                </div>
+                <button class="btn btn-primary" data-ng-click="deleteCustomer(delcustomer.id)">Delete</button>
+    
+</div>
